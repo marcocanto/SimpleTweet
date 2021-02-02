@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    tools:context=".ComposeActivity">
+
+    <EditText
+        android:id="@+id/etCompose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:autofillHints=""
+        android:backgroundTint="@color/sage"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/what_s_happening"
+        android:inputType="textMultiLine"
+        android:minLines="5"
+        android:textColor="@android:color/secondary_text_dark"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="@android:color/tertiary_text_dark" />
+
+    <Button
+        android:id="@+id/btnTweet"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCompose"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/sage"
+        android:text="@string/tweet"
+        android:textColor="@android:color/primary_text_light" />
+
+    <TextView
+        android:id="@+id/tvCharCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCompose"
+        android:layout_alignBottom="@+id/btnTweet"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="27dp"
+        android:text="@string/_0_280"
+        android:textColor="@color/sage"
+        tools:text="0/280" />
+</RelativeLayout>
